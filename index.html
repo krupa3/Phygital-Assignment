@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="script.js"></script>
+    <title>Phygital Assignment</title>
+</head>
+<style>
+.forms {
+    display:inline-flex;
+
+  clear: both;
+}
+
+.forms input {
+  width: 100%;
+  clear: both;
+}
+.section1{
+    width:350px;
+    float:left
+}
+.section2{
+    width:350px;
+    float:left;
+    margin:0 50px;
+}
+.section3{
+    width:500px;
+    float: right;
+    margin:0 50px;
+}
+
+</style>
+<body>
+    <div class="forms">
+        <!-- Form to insert product -->
+    <section class="section1">
+    <h3>Form to store products</h3>
+    <form class="form1">
+        <label for="Product_name">Product Name</label>
+        <input type="text" id="product_name"><br>
+        <label for="taxonomy">Taxonomy</label>
+        <input type="text" id="taxonomy" required><br>  
+        <label for="category">Category</label> 
+        <input type="text" id="category"><br>
+        <label for="subcategory">Subcategory</label>
+        <input type="text" id="subcategory"><br> <br>
+        <button type="submit" value="Submit" onclick="store()">Submit</button>
+    </form>
+</section>
+    <!-- Form to search for a product -->
+    <br>
+    <section class="section2">
+        <h3>Search for a product</h3>
+        <form class="form2">
+        <label for="taxonomy">Taxonomy</label>
+        <input type="text" id="taxonomy1" required><br>  
+        <label for="category">Category</label> 
+        <input type="text" id="category1"><br>
+        <label for="subcategory">Subcategory</label>
+        <input type="text" id="subcategory1"><br> <br>
+        <button type="submit" value="Submit" onclick="return show()">Search</button>
+    </form>
+</section>
+
+<section class="section3">
+    <h3>Product List</h3>
+    <p id="result"><b> search results will appear here</b></p>
+
+</section>
+</div>
+</body>
+</html>
